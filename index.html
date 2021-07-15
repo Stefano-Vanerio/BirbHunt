@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset='utf-8'>
+	<title>Birb Hunt!</title>
+    <link rel="icon" href=Assets/Textures/icon.png>
+	</head>
+	<body style="background-color: rgb(0, 0, 0)  ;" onLoad="main();">
+		<table>
+		<tr>
+			<td>
+			<canvas id="c" width="800" height="500" style="background-color: white;">
+			</canvas>	
+            <script type="text/javascript" src="utils.js"></script> 
+            <script type="text/javascript" src="quaternion.min.js"></script>
+            <script type="text/javascript" src="webgl-obj-loader.min.js"></script> 
+            <script type="text/javascript" src="global_variables.js"></script> 
+            <script type="text/javascript" src="world_generation.js"></script> 
+            <script type="text/javascript" src="collisions.js"></script> 
+            <script type="text/javascript" src="keys.js"></script>
+            <script type="text/javascript" src="app.js"></script>	
+			</td> 
+			<td style="background-image: url(Assets/Textures/6.jpg); font-family: courier; padding: 10px; background-size: cover;">
+			<p><h2> <table border="3" style="background-color: rgba(45,141,45,255);">
+                <tr>
+                    <td>Birb Hunt!</b></td>
+                </tr>
+            </table> </h2></p>
+			<p><b> Commands </b></p>		
+					<table border="1" style="background-color: rgba(45,141,45,255);">
+                        <tr>
+                            <td><b><i>Move the player:</i></b></td>
+                            <td><B> Directional </B>keys</td>
+                        </tr>
+                        <tr>
+                            <td><b><i>Move camera:</i></b></td>
+                            <td>  <b>"W A S D "</b> keys</td>
+                        </tr>
+                        <tr>
+                            <td><b><i>Toggle fullscreen:</i></b></td>
+                            <td><B>  F</B> key</td>
+                        </tr>
+                    </table>	
+			<p><b> Start Raycasting </b></p>
+				<input type="checkbox" id="chbx" onclick="onCheckBoxChange(this.checked);"/> Click to win! <br/>
+            <p><b> Fly birb fly! </b></p>
+            <button onclick=" fly()">Click me to make the birb fly!</button>
+            <p><b> Lovely music </b></p>
+			<p><button onclick="play()">Play Audio</button></p>
+            </td>
+        </tr>
+		</table>
+	</body>
+</html>
